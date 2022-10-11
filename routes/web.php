@@ -18,6 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('/register', [RegisterController::class, 'show']);
 Route::post('/register', [RegisterController::class, 'register']);
