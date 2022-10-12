@@ -9,7 +9,7 @@
 <body>
     <h1>Home</h1>
     @auth
-        <p>Bienvenido, estás autenticado a la página.</p>    
+        <p>Bienvenido {{auth()->user()->email ?? auth()->user()->username}}, estás autenticado a la página.</p>    
     @endauth
     @guest
         <p><a href="/login">Para ver el contenido inicia sesión.</p>
