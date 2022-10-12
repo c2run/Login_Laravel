@@ -3,6 +3,8 @@
 
     <form action="/register" method="POST">
         @csrf
+        <h1>Registrarse</h1>
+        @include('layouts.partials.messages')
     <div class="form-floating mb-3">
         <input type="email" name="email" class="form-control" id="floatingInput" placeholder="email">
         <label for="exampleInputEmail1" class="form-label">Email</label>
