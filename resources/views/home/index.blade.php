@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Home</h1>
+    @auth
+        <p>Bienvenido, estás autenticado a la página.</p>    
+    @endauth
+    @guest
+        <p><a href="/login">Para ver el contenido inicia sesión.</p>
+    @endguest
 </body>
 </html>
