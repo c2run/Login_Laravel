@@ -10,7 +10,8 @@
     <h1>Home</h1>
     @auth
         <p>Bienvenido {{auth()->user()->email ?? auth()->user()->username}}, estás autenticado a la página.</p>    
-    @endauth
+        <p><a href="/logout">Desconectarse</a></p>
+        @endauth
     @guest
         <p><a href="/login">Para ver el contenido inicia sesión.</p>
     @endguest
